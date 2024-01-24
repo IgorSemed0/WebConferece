@@ -22,6 +22,9 @@
         body{
             background-image: url('Imagens/bgteia.jpg');
             background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             }
 
         #menu{
@@ -56,6 +59,62 @@
         #menu li{
             margin-right: 10px;
         }
+        
+        section {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            max-width: 800px;
+        }
+
+        section h2 {
+            color: rgb(243, 105, 6);
+            margin-bottom: 10px;
+        }
+
+        section .conference {
+            border-bottom: 1px solid #ccc;
+            padding: 15px 0;
+        }
+
+        section .conference a {
+            color: rgb(243, 105, 6);
+            text-decoration: none;
+        }
+
+        section .conference a:hover {
+            text-decoration: underline;
+        }
+        #search-bar {
+          width: 70%;
+          margin: 0 auto;
+          margin-bottom: 20px;
+          margin-top: 20px;
+          display: flex;
+          justify-content: center;
+        }
+        
+        #search-bar input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        #search-bar button {
+            background-color: rgb(243, 105, 6);
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #search-bar button:hover {
+            background-color: #e55e17;
+        }
 
     </style>
 </head>
@@ -81,17 +140,38 @@
             </ul>
         </div>
     </header>
-    <section>
-
-
-    </section>
-
+  
+        <div id="search-bar">
+          <input type="text" placeholder="Pesquisar conferências...">
+          <button type="button">Pesquisar</button>
+        </div>
     
-<aside>
+        <section>
+          <h2>Conferências Disponíveis</h2>
+    
+          <div class="conference">
+            <h3><a href="conference.html">Conferência de Tecnologia Avançada</a></h3>
+            <p>Data: 10 de Fevereiro de 2024</p>
+            <p>Descrição: Explore as últimas inovações tecnológicas e descubra o futuro da indústria.</p>
+          </div>
+    
+          <div class="conference">
+            <h3><a href="conference.html">Conferência de Design Criativo</a></h3>
+            <p>Data: 15 de Março de 2024</p>
+            <p>Descrição: Inspire-se com as melhores práticas de design e criatividade neste evento imperdível.</p>
+          </div>
+    
+          <div class="conference">
+            <h3><a href="conference.html">Conferência de Negócios Globais</a></h3>
+            <p>Data: 20 de Abril de 2024</p>
+            <p>Descrição: Conecte-se com líderes empresariais globais e explore oportunidades de crescimento internacional.</p>
+          </div>
+          
+ <aside>
   <h2>Conferências rolando</h2>
   <p>Fique por dentro das últimas e mais emocionantes conferências acontecendo agora. Descubra oportunidades de aprendizado, networking e participação ativa em eventos que moldam o futuro.</p>
   <p>Confira a programação e junte-se a nós!</p>
-</aside>
+ </aside>
 
 
 </body>
