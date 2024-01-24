@@ -1,0 +1,132 @@
+        header{
+            display: flex;
+            height: 10%;
+            align-items: center;
+            width: 100%;
+            background-color: rgba(145, 139, 146, 0.071);
+            
+        }
+        header, body{
+            margin: 0;
+            padding: 0;
+        }
+    
+        body{
+            background-image: url('Imagens/bgteia.jpg');
+            background-size: cover;
+            }
+
+        #menu{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 70%;
+
+        }
+        #menuu{
+            display:    flex;
+            align-items: center;
+            justify-content: flex-end;
+            list-style: none;
+        }
+        #menuu li a{
+            text-decoration: none;
+            color: rgb(243, 105, 6);
+        }
+
+        #logo{
+            width: 30%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 10px;
+        }
+        #logo, header{
+            margin: 0;
+            padding-top: 0; 
+        }
+        #menu li{
+            margin-right: 10px;
+        }
+        header{
+            display: flex;
+            height: 10%;
+            align-items: center;
+            width: 100%;
+            background-color: rgba(145, 139, 146, 0.071);
+            
+        }
+        header, body{
+            margin: 0;
+            padding: 0;
+        }
+    
+        body{
+            background-image: url('Imagens/bgteia.jpg');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+
+        #menu{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 70%;
+
+        }
+        #menuu{
+            display:    flex;
+            align-items: center;
+            justify-content: flex-end;
+            list-style: none;
+        }
+        #menuu li a{
+            text-decoration: none;
+            color: rgb(243, 105, 6);
+        }
+
+        #logo{
+            width: 30%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 10px;
+        }
+        #logo, header{
+            margin: 0;
+            padding-top: 0; 
+        }
+        #menu li{
+            margin-right: 10px;
+        }
+        
+        section {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            max-width: 800px;
+        }
+
+        section h2 {
+            color: rgb(243, 105, 6);
+        }
+
+        section p {
+             margin-bottom: 10px;
+        }
+        aside {
+          position: fixed;
+          top: 10%;
+          right: 5%;
+          background-color: rgba(255, 255, 255, 0.8);
+          padding: 20px;
+          border-radius: 10px;
+          max-width: 300px;
+        }
+        
+        aside h2 {
+          color: rgb(243, 105, 6);
+        }

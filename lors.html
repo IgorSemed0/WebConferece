@@ -56,6 +56,37 @@
         #menu li{
             margin-right: 10px;
         }
+        form {
+            background-color: rgba(255, 255, 255, 0.8);     
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px; 
+        }
+
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+        #login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            backdrop-filter: blur(5px);
+        }
+        button {
+          width: 100%;
+          padding: 10px;
+          background-color: rgb(243, 105, 6);
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
 
     </style>
 </head>
@@ -81,22 +112,36 @@
             </ul>
         </div>
     </header>
-    <section>
-
-
+    
+   <section id="login-container">
+      <article class="form">
+        <form action="cadastro.php" method="POST">
+          <fieldset>
+            <h2>Cadastrar</h2>
+            <label for="username">Nome de usuário:</label>
+            <input type="text" id="username" name="username" placeholder="Digite o seu nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite o seu email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Digite a sua senha" required>
+            <button type="submit">Cadastrar</button>
+          </fieldset>
+        </form>
+      </article>
+    
+      <article class="form">
+        <form action="login.php" method="POST">
+          <fieldset>
+            <h2>Entrar</h2>
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" name="login-email" placeholder="Digite o seu email" required>
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="login-password" placeholder="Digite a sua senha" required>
+            <button type="submit">Entrar</button>
+          </fieldset>
+        </form>
+      </article>
     </section>
-
-    <aside>
-
-
-    </aside>
-
-
-
-
-
-
-
 
 
 </body>

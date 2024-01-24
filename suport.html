@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WebConference</title>
 
     <style>
         header{
@@ -22,6 +22,9 @@
         body{
             background-image: url('Imagens/bgteia.jpg');
             background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             }
 
         #menu{
@@ -56,6 +59,54 @@
         #menu li{
             margin-right: 10px;
         }
+        section {
+          background-color: rgba(255, 255, 255, 0.8);
+          padding: 20px;
+          border-radius: 10px;
+          margin: 20px 0;
+          max-width: 800px;
+        }
+        
+        section h2 {
+          color: rgb(243, 105, 6);
+          margin-bottom: 10px;
+        }
+        
+        section p {
+          margin-bottom: 20px;
+        }
+        form {
+          max-width: 600px;
+          margin: auto;
+        }
+        
+        form label {
+          display: block;
+          margin-bottom: 8px;
+          color: rgb(243, 105, 6);
+        }
+        
+        form input,
+        form textarea {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-sizing: border-box;
+        }
+        form button {
+          background-color: rgb(243, 105, 6);
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        
+        form button:hover {
+          background-color: #e55e17;
+        }
 
     </style>
 </head>
@@ -81,23 +132,31 @@
             </ul>
         </div>
     </header>
+    
+        
     <section>
+        <h2>O que oferecemos no Suporte?</h2>
+        <p>Nossa equipe de suporte está aqui para ajudar a solucionar quaisquer problemas ou dúvidas que você possa ter. Oferecemos suporte dedicado para garantir uma experiência suave em nossos serviços.</p>
 
+        <h2>Como entrar em contato?</h2>
+        <p>Estamos disponíveis 24/7 para atender às suas necessidades. Sinta-se à vontade para nos contatar por meio dos seguintes canais:</p>
+        <ul>
+            <li>Email: support@webconference.com</li>
+            <li>Telefone: +1 (123) 456-7890</li>
+        </ul>
 
+        <h2>Contacte-nos</h2>
+        <p>Se precisar de ajuda imediata ou tiver alguma preocupação, utilize o formulário abaixo para entrar em contato conosco. Responderemos o mais rápido possível.</p>
+        <form action="suport.php" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Seu Email" required>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
     </section>
-
-    <aside>
-
-
-    </aside>
-
-
-
-
-
-
-
-
 
 </body>
 </html>
