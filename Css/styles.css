@@ -1,0 +1,66 @@
+nav{
+    display: flex;
+    height: 10%;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(145, 139, 146, 0.071);
+}
+header{
+    width: 100%;
+    background-image: url('../Imagens/bgteia.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+nav, body, header{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:  rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    }
+
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 70%;
+
+}
+#menuu{
+    display:    flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+}
+#menuu li a{
+    text-decoration: none;
+    color: rgb(243, 105, 6);
+}
+
+#logo{
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+}
+#logo, nav{
+    margin: 0;
+    padding-top: 0; 
+}
+#menu li{
+    margin-right: 10px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color:  rgba(145, 139, 146, 0.071);
+}

@@ -3,62 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/styles.css">
     <title>WebConference</title>
 
     <style>
-        header{
-            display: flex;
-            height: 10%;
-            align-items: center;
-            width: 100%;
-            background-color: rgba(145, 139, 146, 0.071);
-            
-        }
-        header, body{
-            margin: 0;
-            padding: 0;
-        }
-    
-        body{
-            background-image: url('Imagens/bgteia.jpg');
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            }
 
-        #menu{
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            width: 70%;
-
-        }
-        #menuu{
-            display:    flex;
-            align-items: center;
-            justify-content: flex-end;
-            list-style: none;
-        }
-        #menuu li a{
-            text-decoration: none;
-            color: rgb(243, 105, 6);
-        }
-
-        #logo{
-            width: 30%;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding-left: 10px;
-        }
-        #logo, header{
-            margin: 0;
-            padding-top: 0; 
-        }
-        #menu li{
-            margin-right: 10px;
-        }
         
         section {
             background-color: rgba(255, 255, 255, 0.8);
@@ -94,7 +43,7 @@
           display: flex;
           justify-content: center;
         }
-        
+
         #search-bar input[type="text"] {
             width: 100%;
             padding: 10px;
@@ -115,30 +64,48 @@
         #search-bar button:hover {
             background-color: #e55e17;
         }
+        section p {
+             margin-bottom: 10px;
+        }
+        aside {
+          position: fixed;
+          top: 10%;
+          right: 5%;
+          background-color: rgba(255, 255, 255, 0.8);
+          padding: 20px;
+          border-radius: 10px;
+          max-width: 300px;
+        }
+
+        aside h2 {
+          color: rgb(243, 105, 6);
+        }
 
     </style>
 </head>
 <body>
-    <header>
-        <div id="logo" >
-            <img src="Imagens/logo0.png" alt="WebConference Logo">
-        </div>
-        <div id="menu">
-            <ul id="menuu">
-                <li>
-                    <a href="index.html"><strong>Home</strong></a>
-                </li>
-                <li>
-                    <a href="conferences.html"><strong>Conferences</strong></a>
-                </li>
-                <li>
-                    <a href="lors.html"><strong>Login/Sigin</strong></a>
-                </li>
-                <li>
-                    <a href="suport.html"><strong>Contact</strong></a>
-                </li>
-            </ul>
-        </div>
+    <header style="height: 650px;">        <nav>
+            <div id="logo" >
+                <img src="Imagens/logo0.png" alt="WebConference Logo">
+            </div>
+            <div id="menu">
+                <ul id="menuu">
+                    <li>
+                        <a href="index.html"><strong>Home</strong></a>
+                    </li>
+                    <li>
+                        <a href="conferences.html"><strong>Conferences</strong></a>
+                    </li>
+                    <li>
+                        <a href="lors.html"><strong>Login/Sigin</strong></a>
+                    </li>
+                    <li>
+                        <a href="suport.html"><strong>Contact</strong></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
     </header>
   
         <div id="search-bar">
@@ -146,33 +113,37 @@
           <button type="button">Pesquisar</button>
         </div>
     
-        <section>
+    <section>
           <h2>Conferências Disponíveis</h2>
-    
+
           <div class="conference">
             <h3><a href="conference.html">Conferência de Tecnologia Avançada</a></h3>
             <p>Data: 10 de Fevereiro de 2024</p>
             <p>Descrição: Explore as últimas inovações tecnológicas e descubra o futuro da indústria.</p>
           </div>
-    
+
           <div class="conference">
             <h3><a href="conference.html">Conferência de Design Criativo</a></h3>
             <p>Data: 15 de Março de 2024</p>
             <p>Descrição: Inspire-se com as melhores práticas de design e criatividade neste evento imperdível.</p>
           </div>
-    
+
           <div class="conference">
             <h3><a href="conference.html">Conferência de Negócios Globais</a></h3>
             <p>Data: 20 de Abril de 2024</p>
             <p>Descrição: Conecte-se com líderes empresariais globais e explore oportunidades de crescimento internacional.</p>
           </div>
-          
+    </section>
+
  <aside>
   <h2>Conferências rolando</h2>
   <p>Fique por dentro das últimas e mais emocionantes conferências acontecendo agora. Descubra oportunidades de aprendizado, networking e participação ativa em eventos que moldam o futuro.</p>
   <p>Confira a programação e junte-se a nós!</p>
  </aside>
 
+ <footer>
+    <h4 class="">© 2024 EasyGames. Todos os direitos reservados.</h4>
+</footer>
 
 </body>
 </html>

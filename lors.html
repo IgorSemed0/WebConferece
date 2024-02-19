@@ -3,58 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/styles.css">
     <title>WebConferences</title>
 
     <style>
-        header{
-            display: flex;
-            height: 10%;
-            align-items: center;
-            width: 100%;
-            background-color: rgba(145, 139, 146, 0.071);
-            
-        }
-        header, body{
-            margin: 0;
-            padding: 0;
-        }
-    
         body{
-            background-image: url('Imagens/bgteia.jpg');
-            background-size: cover;
-            }
-
-        #menu{
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            width: 70%;
-
-        }
-        #menuu{
-            display:    flex;
-            align-items: center;
-            justify-content: flex-end;
-            list-style: none;
-        }
-        #menuu li a{
-            text-decoration: none;
-            color: rgb(243, 105, 6);
-        }
-
-        #logo{
-            width: 30%;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            padding-left: 10px;
-        }
-        #logo, header{
-            margin: 0;
-            padding-top: 0; 
-        }
-        #menu li{
-            margin-right: 10px;
+          background-image: url('Imagens/bgteia.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
         }
         form {
             background-color: rgba(255, 255, 255, 0.8);     
@@ -77,7 +33,6 @@
             justify-content: center;
             align-items: center;
             height: 90vh;
-            backdrop-filter: blur(5px);
         }
         button {
           width: 100%;
@@ -87,11 +42,11 @@
           border: none;
           border-radius: 5px;
           cursor: pointer;
-
+        }
     </style>
 </head>
-<body>
-    <header>
+<body style="backdrop-filter: blur(1.5px);" >
+    <nav>
         <div id="logo" >
             <img src="Imagens/logo0.png" alt="WebConference Logo">
         </div>
@@ -111,7 +66,7 @@
                 </li>
             </ul>
         </div>
-    </header>
+    </nav>
     
    <section id="login-container">
       <article class="form">
@@ -143,6 +98,9 @@
       </article>
     </section>
 
+    <footer>
+      <h4 class="">© 2024 EasyGames. Todos os direitos reservados.</h4>
+  </footer>
 
 </body>
 </html>
