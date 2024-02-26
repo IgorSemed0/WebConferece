@@ -64,3 +64,37 @@ footer{
     width: 100%;
     background-color:  rgba(145, 139, 146, 0.071);
 }
+.titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px; 
+}
+aside {
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+  }
+
+  aside h2 {
+    color: rgb(243, 105, 6);
+  }
+
+  #bv{
+    color:  rgb(255, 255, 255);
+    font-size: 250%;
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
