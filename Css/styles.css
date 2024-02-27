@@ -52,7 +52,7 @@ body{
 }
 #logo, nav{
     margin: 0;
-    padding-top: 0; 
+    padding-top: 0;
 }
 #menu li{
     margin-right: 10px;
@@ -72,21 +72,12 @@ footer{
     font-size: larger;
     padding: 20px;
     border-radius: 10px;
-    margin: 10px; 
+    margin: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
-aside {
-    position: fixed;
-    top: 10%;
-    right: 5%;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 300px;
-  }
-
-  aside h2 {
-    color: rgb(243, 105, 6);
-  }
 
   #bv{
     color:  rgb(255, 255, 255);
@@ -135,14 +126,22 @@ body{
       overflow-y: scroll;
       padding: 20px;
       margin-bottom: 20px;
-  }
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
+}
   .chat-header, .sidebar-header {
       background-color: #ff6d05;
       color: white;
       padding: 10px;
       border-radius: 15px 15px 0 0;
       margin-bottom: 20px;
-  }
+      -webkit-border-radius: 15px 15px 0 0;
+      -moz-border-radius: 15px 15px 0 0;
+      -ms-border-radius: 15px 15px 0 0;
+      -o-border-radius: 15px 15px 0 0;
+}
   .chat-sidebar{
       background-color: whitesmoke;
       max-height: 440px;
@@ -167,8 +166,11 @@ body{
       margin-bottom: 20px;
       background-color: whitesmoke;
       max-height: 440px;
-
-  }
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
+}
   .text-header{
       color: #343a40;
       text-decoration: #343a40;
