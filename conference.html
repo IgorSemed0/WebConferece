@@ -14,91 +14,16 @@
           background-repeat: no-repeat;
         }
         footer {
-        bottom: 0;
-        position: fixed;
-        width: 90%;
-        text-align: center;
-    }
-    .btn-purple {
-            background-color: #ff6d05;
-            border-color: #ff6d05;
-            color: white;
-        }
-        .btn-purple:hover {
-            background-color: #ff6d05;
-            border-color: #ff6d05;
-        }
-        .chat-container, .chat-sidebar {
-            height: 500px;
-            border: 1px solid #ff6d05;
-            border-radius: 15px;
-            overflow-y: scroll;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        .chat-header, .sidebar-header {
-            background-color: #ff6d05;
-            color: white;
-            padding: 10px;
-            border-radius: 15px 15px 0 0;
-            margin-bottom: 20px;
-        }
-        .footer {
-            position: fixed;
-            left: 0;
             bottom: 0;
             width: 100%;
-            background-color: #343a40;
-            color: white;
             text-align: center;
-        }
-        .chat-form{
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: #343a40;
             color: white;
-            text-align: center;
-        }
-        .chat-container {
-            height: 500px;
-            border: 1px solid #ff6d05;
-            border-radius: 15px;
-            overflow-y: scroll;
-            padding: 20px;
-            margin-bottom: 20px;
-
-        }
-        aside {
-          position: fixed;
-          top: 10%;
-          right: 5%;
-          background-color: rgba(255, 255, 255, 0.8);
-          padding: 10px;
-          border-radius: 10px;
-          max-width: 600px;
-        }
-        aside h2 {
-          color: rgb(243, 105, 6);
-        }
-        .text-header{
-            color: #343a40;
-            text-decoration: #343a40;
-        }
-        #chat{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-        #conferencia{
-            display: flex;
-            margin-right: 0%;
-            margin-left: 10px;
         }
     </style>
+
 </head>
-    <header style="height: 650px; padding-left: 20px;">
+
+    <header>
         <nav>
             <div id="logo" >
                 <img src="Imagens/logo0.png" alt="WebConference Logo">
@@ -107,57 +32,53 @@
             <div id="menu">
                 <ul id="menuu">
                     <li>
-                        <a href="index.html"><strong>Home</strong></a>
+                        <a href="lindex.html"><strong>Início</strong></a>
                     </li>
                     <li>
-                        <a href="conferences.html"><strong>Conferences</strong></a>
+                        <a href="conferences.html"><strong>Conferências</strong></a>
                     </li>
                     <li>
-                        <a href="lors.html"><strong>Login/Sigin</strong></a>
+                        <a href="lors.html"><strong>Cadastrar</strong></a>
                     </li>
                     <li>
-                        <a href="suport.html"><strong>Contact</strong></a>
+                        <a href="suport.html"><strong>Suporte</strong></a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <div id="bv">
-        <h2 style="font-size: xxxx-large;">Bem Vindo Ao <br> WebConference!</h2>
-        </div>
     </header>
 
-    <section>
-        <article class="video">
+    <section class="conference>
+        <article id="video">
             <div>
-                <video width="400" height="400" controls>
-                    <source src="Videos/conf.mp4" type="video/mp4">
+                <video width="700px" height="500px" controls>
+                    <source src="Videos/" type="video/mp4">
                 </video>
             </div>
         </article>
-        <aside>
-            <div id="conferencia">
-                <div id="chat" style="margin: 50px;">
-                    <div>
-                    <div class="chat-header">
-                        <h2 class="text-header">Live Chat</h2>
-                    </div>
-                    <div class="chat-container" id="chatContainer">
-                        <p></p>
-                        <p>(Admim) Helder: The conference will star in a fell minutes...</p>
-                        <p>Joana: Okay!</p>
-                        <p>Janeth:Waiting...</p>
-                        <p>Percy: escrevendo...</p> <br><br><br><br><br><br><br><br><br>
-                        <form id="chatForm" class="mt-4">
-                            <div class="mb-3">
-                                <label for="message" class="form-label text-white">Mensagem</label>
-                                <input type="text" class="form-control" id="message">
-                            </div>
-                            <button type="submit" class="btn btn-purple">Enviar</button>
-                        </form>
+        <article id="conferencia">
+                <div class="chat" style="margin: 50px;">
+                        <div>
+                        <div class="chat-header">
+                            <h2 class="text-header">Live Chat</h2>
+                        </div>
+                        <div class="chat-container" id="chatContainer">
+                            <p></p>
+                            <p>(Admim) Helder: The conference will star in a fell minutes...</p>
+                            <p>Joana: Okay!</p>
+                            <p>Janeth:Waiting...</p>
+                            <p>Percy: escrevendo...</p> <br><br><br><br><br><br><br><br><br>
+                            <form id="chatForm">
+                                <div>
+                                    <label for="message">Mensagem</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <button type="submit" class="btn btn-purple">Enviar</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-                <div style="margin: 50px;">
+                <div style="margin: 30px;">
                     <div class="sidebar-header">
                         <h2 class="text-header">Usuários Online</h2>
                     </div>
@@ -173,8 +94,7 @@
                         <p>José</p>
                     </div>
                 </div>
-            </div>
-        </aside>
+            </article>
     </section>
 
     <footer>

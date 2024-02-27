@@ -13,12 +13,10 @@
           background-repeat: no-repeat;
         }
         form {
-          display: flex;
-          justify-content: center;
-          background-color: rgba(255, 255, 255, 0.8);
-          padding: 20px;
-          border-radius: 10px;
-          font-size: x-large;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            font-size: x-large;
         }
         .form {
             background-color: rgba(255, 255, 255, 0.8);
@@ -30,7 +28,6 @@
         label, input {
             display: block;
             margin-bottom: 10px;
-            font-size: large;
         }
         #login-container {
             display: flex;
@@ -74,17 +71,15 @@
 
    <section id="login-container">
       <article class="form">
-        <form action="lindex.html" method="POST">
+        <form action="lindex.php" method="POST">
           <fieldset>
-            <h2>Cadastrar</h2>
-            <label for="username">Nome de usuário:</label>
-            <input type="text" id="username" name="username" placeholder="Digite o seu nome" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Digite o seu email" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Digite a sua senha" required>
-            <button type="submit"><a href="lindex.html" style="color: white;">Cadastrar</a></button> <br>
-            <a href="login.html">Já tenho uma conta.</a>
+            <h2>Entrar</h2>
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" name="login-email" placeholder="Digite o seu email" required>
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="login-password" placeholder="Digite a sua senha" required>
+            <button type="submit"><a href="lindex.html" style="color: white;">Entrar</a></button> <br>
+            <a href="lors.html">Não tenho uma conta.</a>
           </fieldset>
         </form>
       </article>
