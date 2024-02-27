@@ -68,42 +68,6 @@
           max-width: 800px;
         }
         
-        article h2 {
-          color: rgb(243, 105, 6);
-          margin-bottom: 10px;
-        }
-        
-        article p {
-          margin-bottom: 20px;
-        }
-        form {
-          max-width: 600px;
-          margin: auto;
-        }
-        
-        form label {
-          display: block;
-          margin-bottom: 8px;
-          color: rgb(243, 105, 6);
-        }
-        
-        form input,
-        form textarea {
-          width: 100%;
-          padding: 10px;
-          margin-bottom: 15px;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          box-sizing: border-box;
-        }
-        form button {
-          background-color: rgb(243, 105, 6);
-          color: white;
-          padding: 12px 20px;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-        }
         
         form button:hover {
           background-color: #e55e17;
@@ -113,17 +77,48 @@
             width: 100%;
             background-size: cover;
             background-repeat: no-repeat;
+        }
+        /* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+}
 
-        }
-        article{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        footer{
-            position: fixed;
-        }
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+}
+
+nav li.activo a {
+    background-color: #ddd;
+}
+
+/* Content styles */
+.conteudo {
+    padding: 20px;
+}
+
+.conteudo p {
+    display: none;
+}
+
+.conteudo p.active {
+    display: block;
+}
+
+
     </style>
 </head>
 <body>
@@ -134,35 +129,37 @@
         <div id="menu">
             <ul id="menuu">
                 <li>
-                    <a href="lindex.html"><strong>Início</strong></a>
+                    <a href="index.html"><strong>Início</strong></a>
                 </li>
                 <li>
-                    <a href="lconferences.html"><strong>Conferências</strong></a>
+                    <a href="conferences.html"><strong>Conferências</strong></a>
                 </li>
                 <li>
-                    <a href="perfil.html"><strong>WebConference</strong></a>
+                    <a href="lors.html"><strong>Conecta-se</strong></a>
                 </li>
                 <li>
-                    <a href="lsuport.html"><strong>Suporte</strong></a>
+                    <a href="suport.html"><strong>Suporte</strong></a>
                 </li>
             </ul>
         </div>
     </header>
-    
-        
+
     <section>
-        <article>
-            
-            <img src="/Imagens/logo.jpg" alt="Imagem de usuário" style="border-radius: 50%;">
+        <nav>
+            <ul>
+                <li class="activo">Home</li>
+                <li>Profile</li>
+                <li>Contact</li>
 
-
-            <ul style="list-style: none;">
-                <li>Nome de Usurário: WebConference</li><br>
-                <li>Email: suporte@webconference.com</li><br>
-                <li>Telefone: +244 934 551 088</li>
             </ul>
-            <br><br><br>
-        </article>
+        </nav>
+    
+        <div class="conteudo">
+            <p>Home content</p>
+            <p>Profile content (initially hidden)</p>
+            <p>Contact content (initially hidden)</p>
+            <p>Settings content (initially hidden)</p>
+        </div>
     </section>
 
     <footer>
