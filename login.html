@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,19 @@
     <title>WebConferences</title>
 
     <style>
-        body{
-          background-image: url('Imagens/bgteia.jpg');
-          background-size: cover;
-          background-repeat: no-repeat;
+        body {
+            background-image: url('Imagens/bgteia.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
         }
+
         form {
             background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
             border-radius: 10px;
             font-size: x-large;
         }
+
         .form {
             background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
@@ -25,69 +28,75 @@
             margin: 10px;
         }
 
-        label, input {
+        label,
+        input {
             display: block;
             margin-bottom: 10px;
         }
+
         #login-container {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 90vh;
         }
+
         button {
-          width: 100%;
-          padding: 10px;
-          background-color: rgb(243, 105, 6);
-          color: white;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(243, 105, 6);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
-<body style="backdrop-filter: blur(1.5px);" >
+
+<body style="backdrop-filter: blur(1.5px);">
     <nav>
-        <div id="logo" >
+        <div id="logo">
             <img src="Imagens/logo0.png" alt="WebConference Logo">
         </div>
         <div id="menu">
-          <ul id="menuu">
-            <li>
-                <a href="index.html"><strong>Início</strong></a>
-            </li>
-            <li>
-                <a href="conferences.html"><strong>Conferências</strong></a>
-            </li>
-            <li>
-                <a href="lors.html"><strong>Conecta-se</strong></a>
-            </li>
-            <li>
-                <a href="suport.html"><strong>Suporte</strong></a>
-            </li>
-        </ul>
+            <ul id="menuu">
+                <li>
+                    <a href="index.html"><strong>Início</strong></a>
+                </li>
+                <li>
+                    <a href="conferences.html"><strong>Conferências</strong></a>
+                </li>
+                <li>
+                    <a href="lors.html"><strong>Conecta-se</strong></a>
+                </li>
+                <li>
+                    <a href="suport.html"><strong>Suporte</strong></a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-   <section id="login-container">
-      <article class="form">
-        <form action="lindex.php" method="POST">
-          <fieldset>
-            <h2>Entrar</h2>
-            <label for="login-email">Email:</label>
-            <input type="email" id="login-email" name="login-email" placeholder="Digite o seu email" required>
-            <label for="login-password">Password:</label>
-            <input type="password" id="login-password" name="login-password" placeholder="Digite a sua senha" required>
-            <button type="submit"><a href="lindex.html" style="color: white;">Entrar</a></button> <br>
-            <a href="lors.html">Não tenho uma conta.</a>
-          </fieldset>
-        </form>
-      </article>
+    <section id="login-container">
+        <article class="form">
+            <form action="lindex.php" method="POST">
+                <fieldset>
+                    <h2>Entrar</h2>
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="login-email" placeholder="Digite o seu email" required>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="login-password" placeholder="Digite a sua senha"
+                        required>
+                    <button type="submit"><a href="lindex.html" style="color: white;">Entrar</a></button> <br>
+                    <a href="lors.html">Não tenho uma conta.</a>
+                </fieldset>
+            </form>
+        </article>
     </section>
 
     <footer>
-      <h4 class="">© 2024 WebConference. Todos os direitos reservados.</h4>
-  </footer>
+        <h4 class="">© 2024 WebConference. Todos os direitos reservados.</h4>
+    </footer>
 
 </body>
+
 </html>
